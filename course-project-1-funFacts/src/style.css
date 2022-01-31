@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+/* header - nav */
+
+nav {
+    height: 91px;
+    background-color: #21222A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3 {
+    color: #61DAFB;
+    font-weight: 700;
+    
+}
+
+nav h4 {
+  
+    font-weight: 600;
+    margin-right: 27px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.logo img {
+    width: 30px;
+    height: 27px;
+    margin: 0px 8px;
+}
+
+/* main */
+
+main {
+    background-color: #282D35;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/backgroundImage.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 43px;
+    padding: 57px 0px 46px 27px;
+    letter-spacing: -0.5px;
+}
+
+ul {
+    padding-bottom: 125px;
+    list-style: none;
+    margin-left: 50px;
+}
+li {
+    padding-bottom: 20px;
+}
+
+ul li::before{
+    font-size: 30px;
+    content: "\2022";  
+    color: #61DAFB;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em; 
+}
+
+.backgroundImage {
+   position: absolute;
+   right: 0px;
+   top: 30%;
+   height: 400px;
+}
