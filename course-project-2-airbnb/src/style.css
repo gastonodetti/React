@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;}
+
 .header {
   height: 70px;
   padding: 20px 36px;
@@ -13,12 +19,15 @@
 .card {
   width: 175px;
   font-size: 12px;
+
 }
 
 
 .card--image {
-  width: 100%;
-  border-radius: 9px;
+ width: 176px;
+ height: 235px;
+ border-radius: 15px;
+ padding-bottom: 5px;
 }
 
 .card--stats {
@@ -28,5 +37,13 @@
 
 .card--star {
   height: 14px;
+}
+
+.cardHolder {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: flex-start;
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header"
 import Card from "./components/Card"
+import CardElements from "./data"
 
 
 /*
@@ -14,23 +15,34 @@ Challenge:
 Note: We haven't styled the group of components yet, so they'll
 still be block elements, stacked vertically. We'll add styling later.
 
-https://scrimba.com/learn/learnreact/project-map-experiences-data-into-components-co0704006bcf75aae48fb04c3
+https://www.figma.com/file/4YjrygFEXOcDp9AAnVFv7o/Airbnb-Experiences?node-id=0%3A1
+
+https://scrimba.com/learn/learnreact/project-sold-out-badge-cod6a41078bdec8db3c39513b
 */
 
 
 export default function App(){
+
+  const cardElements = CardElements.map(e => {
+
+    return <Card 
+              key={e.id}
+              img={e.coverImg}
+              rating={e.stats.rating}
+              reviewCount={e.stats.reviewCount}
+              location={e.location}
+              title={e.title}
+              price={e.price}
+              />
+
+  })
+
   return (
     <div>
       <Header />
-      <Card 
-        img="hero1.png"
-        rating="5.0"
-        reviewCount={6}
-        location="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      
-      />
+      <div className="cardHolder">
+        {cardElements}
+      </div>
     </div>
   )
 }
