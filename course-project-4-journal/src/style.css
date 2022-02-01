@@ -1,0 +1,42 @@
+#root {
+    width: 50%;
+    margin: 0px auto;
+}
+
+/* header */
+
+.header--div {
+    height: 55px;
+    background-color: #F55A5A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#header--logo {
+    height: 24px;
+    width: 24px;
+    padding: 10px;
+}
+
+/* main section */
+
+.travel--div {
+    margin: 100px 40px 36px 40px;
+    height: 168px;
+    border: solid 1px black;
+}
+
+.travel--img {
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+    border: solid 1px black;
+    display: inline;
+}
+
+.travel--content {
+    display: inline;
+}
