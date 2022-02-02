@@ -4,7 +4,7 @@ import Location from "../images/location.png"
 export default function Travel(props){
     return (
         <div className="travel--div">
-            <img className="travel--img" src="https://lh3.googleusercontent.com/7qGDUPijGP5_WDcfMoD6jnbjzutgQWyXfNV_4VPIbj12RJd78LnLeflJ6Wywm_Pk"/>
+            <img className="travel--img" src={props.imageUrl}/>
             <div className="travel--content">
                 <div>
                     <img id="location--image"src={Location}/>

@@ -17,7 +17,9 @@ export default function App(){
     return (
         <div>
         <Header />
-        {locations}
+            <div className="travels">
+                {locations}
+            </div>
         </div>
     )
 }
