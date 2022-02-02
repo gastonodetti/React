@@ -4,10 +4,20 @@ import Header from "./components/Header"
 import Travel from "./components/Travel"
 
 export default function App(){
+
+    const locations = data.map(item => {
+        return <Travel 
+        
+            {...item}
+
+        />
+    })
+
+
     return (
         <div>
         <Header />
-        <Travel />
+        {locations}
         </div>
     )
 }
