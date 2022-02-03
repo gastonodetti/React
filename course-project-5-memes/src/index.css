@@ -1,0 +1,17 @@
+.header--main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header--logo {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+}
+
+.header--logo img {
+  width: 31px;
+  height: 26px;
+  padding: 10px;
+}
