@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Inter&family=Karla&display=swap');
+
+body {
+  width: 850px;
+  margin: 0px auto;
+}
+
+/* Header */
+
+
 .header--main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Karla', sans-serif;
+  background: linear-gradient(to right,#672280, #A626D3);
+  color: white;
 }
 
 .header--logo {
@@ -11,7 +24,60 @@
 }
 
 .header--logo img {
-  width: 31px;
-  height: 26px;
+  width: 35px;
+  height: 29px;
   padding: 10px;
 }
+
+/* Form */
+
+.form--main {
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs--main {
+  margin: 36px;
+  display: flex;
+  justify-content: space-around;
+  gap: 17px;
+  align-items: center;
+  
+}
+
+.inputs--main input {
+  width: 330px;
+  height: 35px;
+  border-radius: 5px;
+  border: solid 0.5px grey;
+}
+
+#button--main {
+  width: 690px;
+  height: 40px;
+  background: linear-gradient(to right,#672280, #A626D3);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+/* Meme */
+
+.meme--result {
+  width: 690px;
+  height: 400px;
+  margin: 36px auto;
+  
+}
+
+#theMeme {
+  width: 690px;
+  height: auto;
+  padding-bottom: 100px;
+
+}
+
