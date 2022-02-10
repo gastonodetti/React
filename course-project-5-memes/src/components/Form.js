@@ -3,16 +3,25 @@ import ArrayMemes from "../MemesData"
 
 export default function Form(){
 
-    const [currentMeme, setCurrentMeme] = React.useState("")
+
+
+    const [allMemeImages] = React.useState(ArrayMemes)
+
+    const [currentMeme, setCurrentMeme] = React.useState({
+            topText: "",
+            bottomText: "",
+            randomImage: "http://i.imgflip.com/1bij.jpg"
+        })
 
     function getImage(){
-
-        console.log(currentMeme)
 
         let position = Math.round(Math.random() * 100)
         let newMeme = ArrayMemes.data.memes[position].url
         
-        setCurrentMeme(newMeme)
+        setCurrentMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage: newMeme
+        }))
 
     }
 
@@ -28,7 +37,7 @@ export default function Form(){
             <button onClick={getImage} id="button--main">Get a new meme image  🖼</button>
         </div>
         <div className="meme--result">
-            <img id="theMeme" src={currentMeme} />
+            <img id="theMeme" src={currentMeme.randomImage} />
         </div>
         </div>
 
