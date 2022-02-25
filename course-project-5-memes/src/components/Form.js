@@ -3,9 +3,16 @@ import ArrayMemes from "../MemesData"
 
 export default function Form(){
 
+const [allMemes, setAllMemes] = React.useState([])
 
+React.useEffect(function() {
+ 
+  fetch("https://api.imgflip.com/get_memes")
+  .then(res => res.json())
+  .then(data => setAllMemes(data))
 
-    const [allMemeImages] = React.useState(ArrayMemes)
+})
+    
 
     const [currentMeme, setCurrentMeme] = React.useState({
             topText: "",
