@@ -12,6 +12,8 @@ React.useEffect(function() {
   .then(data => setAllMemes(data))
 
 })
+
+/* https://scrimba.com/learn/learnreact/project-get-memes-from-api-coe9a494f854435f2630f2ce4 */
     
 
     const [currentMeme, setCurrentMeme] = React.useState({
