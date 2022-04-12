@@ -1,7 +1,8 @@
 
 export default function Dice(props){
+
     return (
-        <div className="Die">
+        <div className={props.isHeld ? "isHeld" : "Die"} >
             {props.value}
         </div>
     )
