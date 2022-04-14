@@ -1,0 +1,78 @@
+
+/* Presentation */
+
+.presentation--div {
+    color: white;
+    background-color: #7510F7;
+    height: 550px;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+
+.presentation--div * {
+    width: 60%;
+}
+
+.presentation--div a {
+    color: white;
+    
+}
+.presentation--div h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.presentation--div p {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.presentation--img {
+    padding-left: 100px;
+    height: 220px;
+    width: 220px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .presentation--div {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 50px;
+
+    }
+    
+    
+    .presentation--div * {
+        width: 80%;
+               
+    }
+    
+    .presentation--div h2 {
+        font-size: 30px;
+        margin: 10px auto;
+    }
+    
+    .presentation--div p {
+        
+        letter-spacing: 1px;
+        line-height: 20px;
+        margin: 40px auto;
+    }
+    
+    .presentation--img {
+        padding: 30px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* <h2> */
