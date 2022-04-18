@@ -1,7 +1,7 @@
 
 export default function Dice(props){
     return (
-        <div className="Die">
+        <div className="Die" onClick={props.holdDice}>
             {props.value}
         </div>
     )
