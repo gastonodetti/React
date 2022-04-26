@@ -31,7 +31,7 @@ function generateRandomDices(){
   return newArray
 }
 
-const diceElements = dices.map(dice => <Die key= {dice.id} value = {dice.value} holdDice={function() { holdDice(dice.id)}}/>) 
+const diceElements = dices.map(dice => <Die key= {dice.id} value = {dice.value} isHeld={dice.isHeld}/>) 
 
 
   return (

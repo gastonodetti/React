@@ -1,0 +1,48 @@
+
+/* introduction */
+
+.introduction--div {
+    color: #28292b;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    
+}
+
+
+.introduction--div h1 {
+    font-size: 45px;
+    letter-spacing: 4px;
+    
+}
+
+.introduction--div p {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .introduction--div {
+        padding: 30px;
+        
+        align-items: center;
+        height: 85vh;
+        
+    }
+    
+    
+    .introduction--div h1 {
+        width: 60vw;
+        font-size: 45px;
+        letter-spacing: 3px;
+        
+    }
+    
+    .introduction--div p {
+        font-size: 16px;
+    }
+    
+}

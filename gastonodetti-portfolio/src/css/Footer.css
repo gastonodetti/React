@@ -1,0 +1,102 @@
+
+/* Footer */
+
+.footer--main--div {
+    color: white;
+    margin-top: 150px;
+    background-color: #7510F7;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer--contactMe {
+    position: relative;
+    top: -75px;
+    margin: 0px auto;
+    width: 80%;
+    background-color: #28292b;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.footer--button  {
+    color: white;
+}
+
+.footer--contactMe button {
+    background-color: transparent;
+    text-decoration: none;
+    border: solid 2px #7510F7;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 00.3s;
+    font-size: 20px;
+}
+
+
+.footer--contactMe button:hover {
+    background-color: #7510F7;
+}
+
+.footer--social {
+    margin: 50px auto;
+    width: 40%;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.footer--signature {
+    margin-top: 80px;
+}
+
+
+.footer--social a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.footer--social a:hover{
+    background-color: black;
+
+}
+
+@media (max-width: 768px) {
+    
+    
+.footer--main--div {
+    height: min-content;
+}
+
+.footer--contactMe {
+    position: inherit;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    width: 95%;
+    height: min-content;
+    flex-direction: column;
+}
+
+
+.footer--contactMe button {
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+.footer--signature {
+    margin: 40px 0px 50px 0px;
+
+}
+
+
+}

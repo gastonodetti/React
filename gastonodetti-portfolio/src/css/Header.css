@@ -1,0 +1,63 @@
+
+/* header */
+
+.header--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    
+    
+
+}
+
+.header--logo {
+    font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
+    color: #7510F7;
+    font-size: 60px;
+    padding-left: 50px;
+}
+
+.header--a {
+    margin-right: 20px;
+    color: #7510F7;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 70px;
+    border-radius: 20px;
+    border: solid 2px #7510F7;
+    transition: 0.3s;
+    font-size: 16px;
+
+    top: 20px;
+}
+
+.header--a:hover {
+    background-color: #7510F7;
+    color: white;
+    cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+    .header--div {     
+        height: 5vh;      
+    
+    }
+    
+    .header--logo {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+    
+    .header--a {
+        padding: 10px 20px;
+        margin-right: 10px;
+        transition: 0.3s;
+        font-size: 12px;
+    
+    }
+    
+   
+}
