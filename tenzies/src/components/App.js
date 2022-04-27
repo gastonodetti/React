@@ -9,13 +9,15 @@ function App() {
 
 
 const [dices, setDices] = React.useState(generateRandomDices());
-const [tenzies, setTenzies] = React.useState(false);
+//const [tenzies, setTenzies] = React.useState(false);
 
+/*
 useEffect(
   function(){
     console.log("hola")
   }
   , [dices])
+*/
 
 //cambia el color del dado segun propiedad isheld
 function holdDice(id){
