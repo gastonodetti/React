@@ -4,20 +4,41 @@ import Die from "./Die"
 import Button from "./Button"
 import React, { useEffect } from "react"
 import { nanoid } from 'nanoid'
+import Confetti from 'react-confetti'
+
 
 function App() {
 
 
 const [dices, setDices] = React.useState(generateRandomDices());
-//const [tenzies, setTenzies] = React.useState(false);
+const [tenzies, setTenzies] = React.useState(false);
+const [plays, setPlays] = React.useState(0)
 
-/*
+
+
 useEffect(
   function(){
-    console.log("hola")
-  }
+    const allHeld = dices.every(die => die.isHeld)
+    const firstValue = dices[0].value
+    const allSameValue = dices.every(die => die.value === firstValue)
+    if (allHeld && allSameValue) {
+        setTenzies(true)
+        console.log("You won!")
+    }}
   , [dices])
-*/
+
+
+useEffect(
+  function(){
+    const allHeld = dices.every(die => die.isHeld)
+    const firstValue = dices[0].value
+    const allSameValue = dices.every(die => die.value === firstValue)
+    if (allHeld && allSameValue) {
+        setTenzies(true)
+        console.log("You won!")
+    }}
+  , [dices])
+
 
 //cambia el color del dado segun propiedad isheld
 function holdDice(id){
@@ -36,6 +57,14 @@ function newDie(){
 }
 
 function rollDices(){
+
+  tenzies ? setPlays(0) : setPlays(plays+1)
+
+  if(tenzies){
+    setTenzies(false)
+    setDices(generateRandomDices())
+  }
+
   setDices(oldDices => oldDices.map(die => {
 
     return die.isHeld ? 
@@ -64,14 +93,19 @@ const diceElements = dices.map(dice => <Die
 
   return (
    <main>
+     {tenzies && <Confetti />}
      <Rules />
       <div className="Dices">
         {diceElements}
       </div>
         
      <Button 
+        content = {tenzies ? "Nuevo juego" : "Rueda"}
         handleClick = {() => rollDices()}
      />
+     <div className="Plays">
+       Tus jugadas: {plays}
+     </div>
    </main>
   );
 }

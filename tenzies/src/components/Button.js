@@ -4,7 +4,7 @@ export default function Button(props){
         <button 
             onClick={props.handleClick}
             className="Button">
-            Roll
+            {props.content}
         </button>
     )
 }

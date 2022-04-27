@@ -3,7 +3,9 @@ export default function Rules(){
     return (
         <div className="Rules">
            <h1>Tenzies</h1>
-           <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+           <p>Rueda los dados hasta que sean todos iguales.
+                Haz click en cada dado para "congelarlo" y que no ruede.
+                </p>
         </div>
     )
 }
